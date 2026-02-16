@@ -1,0 +1,9 @@
+Analizzare la funzione main
+Individuare dove stampa la lista dei test disponibili: call print_available_tests
+Cercare la stringa "Test results", e call qword ptr [rbx] da patchare con xor eax, eax
+Edit → Patch program → Apply patches to input file
+
+$ cd "/c/Users/Andre/Documents/4_debugmenot"
+$ wsl
+gdb ./debugmenot
+(gdb) run

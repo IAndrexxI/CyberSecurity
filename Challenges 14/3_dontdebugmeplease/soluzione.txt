@@ -1,0 +1,17 @@
+Aprire il binario nel disassembler.
+Analizzare main e notare: fgets → strlen → strcmp.
+Verificare che in main non ci siano controlli anti‑debug.
+Andare all’entrypoint _start.
+Individuare funzione di init eseguita prima del main.
+Trovare call _ptrace patchare sostituendola con NOP.
+Salvare il binario patchato.
+
+gdb ./dontdebugmeplease
+start
+disas main
+Individuare la chiamata a strcmp. b *0x00005555554008d6
+run e Inserire un input più lungo di 7 caratteri.
+info registers e Individuare il valore del registro rsi
+x/s 0x5555554009d0
+
+"SPRITZ{d38U99in9_iS_v3ry_4nn0yIn9.}"

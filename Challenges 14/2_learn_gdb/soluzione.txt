@@ -1,0 +1,8 @@
+gdb ./run
+b decrypt_flag
+run
+disas
+b *0x4008ad
+continue
+x/s (char*) 0x6013e8
+picoCTF{gDb_iS_sUp3r_u53fuL_a6c61d82}

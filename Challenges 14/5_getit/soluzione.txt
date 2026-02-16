@@ -1,0 +1,13 @@
+Apri il binario in IDA.
+Analizza la funzione main.
+Individua la scrittura nella stringa t.
+Trova l’indirizzo della variabile t in memoria (es. 0x6010e0).
+Apri il binario in GDB.
+Metti un breakpoint sull’istruzione che scrive t (es. b *0x4007B4).
+Esegui il programma (run).
+display /s 0x6010e0
+while 1
+  continue
+end
+
+SharifCTF{b70c59275fcfa8aebf2d5911????????}

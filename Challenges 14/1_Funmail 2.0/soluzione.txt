@@ -1,0 +1,7 @@
+vai nella funzione showEmails, sopra al nome blu premi x 'there are no xrefs to showemails'
+stessa cosa ma premi g e ottieni '0x00000A2C', questo è solo l’offset
+
+gdb ./funmail2.0
+start meglio di run+breakpoint
+call (void) showEmails()
+risultato: TUCTF{l0c4l_<_r3m073_3x3cu710n}
