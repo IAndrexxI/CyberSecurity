@@ -1,0 +1,4 @@
+$ nano exploit.py
+$ python3 exploit.py
+$ ls
+$ cat flag.txt
