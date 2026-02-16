@@ -1,0 +1,9 @@
+1. cd /c/Users/Andre/Documents/3_das_blog
+2. chmod -R +rx ./
+3. docker compose up -d --build
+4. http://localhost:8080 -> login
+5. apro 3_das_blog\db\init\db_seed.sql, inserisci user e pass trovati in: (INSERT INTO `users` VALUES (1,'JohnsTestUser','user','AT3stAccountForT3sting')
+6. dopo il submit clicca nella home ispeziona, poi Application vicino a sources, vai su cookies
+7. modifica permission:user in permission:admin e premi invio
+8. refresh della pagina
+9. risultato: flag{C00ki3s_c4n_b33_ch4ng3d_?}

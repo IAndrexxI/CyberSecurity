@@ -1,0 +1,13 @@
+1. cd "/g/Il mio Drive/UNIPD Andrea/CyberSecurity/Challenges 7/1_ajax_not_soap"
+2. chmod -R +rx ./
+3. bash docker_build.sh
+4. $ bash docker_run.sh
+5. apro il sito: http://127.0.0.1:8085
+6. fn+f12, source, index
+7. breakpoint toccando il numero della linea dove c'è: (29-username)data = data.replace(/(\r\n|\n|\r)/gm,"");
+8. inserisci un carattere qualsiasi nell'username e si bloccherà dando quello reale nella sezione Scope, data: "MrClean"
+9. togli brakpoint e inserisci username
+10. breakpoint toccando il numero della linea dove c'è: (45-password)data = data.replace(/(\r\n|\n|\r)/gm,"");
+11. inserisci un carattere qualsiasi nella password e si bloccherà dando quella reale nella sezione Scope, data: "flag{hj38dsjk324nkeasd9}"
+12. togli brakpoint e inserisci la password
+13. in questo caso il risultato è la flag stessa "flag{hj38dsjk324nkeasd9}"

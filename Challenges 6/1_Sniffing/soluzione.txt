@@ -1,0 +1,6 @@
+1. Apri il file 
+2. In alto, nella barra dei filtri, scrivi: http
+3. Cerca una richiesta del tipo: GET / HTTP/1.1
+4. espandi: Hypertext Transfer Protocol
+5. Dentro troverai una riga tipo: Authorization: Basic ...
+6. Quella parte contiene username e password in Base64: bashNinja:flag{help-me-obiwan}

@@ -1,0 +1,7 @@
+1. cd "/g/Il mio Drive/UNIPD Andrea/CyberSecurity/Challenges 7/2_console"
+2. bash docker_build.sh
+3. ./docker_run.sh
+4. nel browser: http://127.0.0.1:8081
+5. ispeziona e vai su script dove c'è: if (md5(input) == "7b1ece53a46f4a5a2995b9cf901bf457") { getThat('Y'); } else { getThat('N') }
+6. Vai in Console: getThat("Y"), questo forza lo stato “valido” senza conoscere la password.
+Password: flag{console_controls_js}

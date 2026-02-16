@@ -1,0 +1,11 @@
+1. $ cd "/c/Users/Andre/Documents/ocr"
+2. $ chmod -R +rx ./
+3. $ docker build -t cpp/ocr .
+4. $ docker run -d -p "127.0.0.1:8091:5000" --name "ocr" "cpp/ocr"
+5. cerca sul browser http://127.0.0.1:8091
+6. ispeziona per trovare il primo suggerimento: <!-- TODO : Remove me : --><!-- /debug-->
+7. http://127.0.0.1:8091/debug
+8. si apre un codice python, notiamo: pa_1 = int(eval(parts[0])) pa_2 = int(eval(parts[1])) if pa_1 == pa_2: return render_template('result.html', result = "Wow, it works !") else: return render_template('result.html', result = "Sorry but it seems that %d is not equal to %d"%(pa_1,pa_2))
+9. inserendo un'immagine alla volta: ord(x[0])=0, ord(x[1])=0... fino ad ottenere }
+10. risultato: INSA{0cr_L0ng}
+

