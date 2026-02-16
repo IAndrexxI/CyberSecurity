@@ -1,0 +1,23 @@
+cd "/c/Users/Andre/Documents/3_Solitaire"
+wsl
+sudo apt update
+sudo apt install build-essential libncurses-dev
+make
+(errore: multiple definition of `deck`, multiple definition of `cursor`
+ nano src/game.h
+ scrivi: extern struct deck *deck; extern struct cursor *cursor;
+ nano src/game.c
+ copia e incolla: struct deck *deck; struct cursor *cursor; e salva
+ rm src/*.o)
+./ttysolitaire
+
+apri IDA
+
+Shift + F12
+doppio click sulla stringa 'you won'
+shift+f4 per vedere shuffle_deck, doppio click sopra, cerca call time e tocca la riga
+Edit → Patch program → Assemble… e scrivi nop 5 volte
+poi 2 nop per: mov     edi, eax
+Edit → Patch program → Apply patches to input file e OK
+
+ora su wsl ./ttysolitaire

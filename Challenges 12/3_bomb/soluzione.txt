@@ -1,0 +1,23 @@
+1. $ cd "/c/Users/Andre/Documents/3_bomb"
+2. $ chmod -R +rx ./
+3. $ strings bomb
+4. $ wsl
+5. $ ./bomb
+6. $ gdb bomb
+7. break phase_1
+8. run e AAAA
+10. disas phase_1
+11. x/s 0x402400 e leggiamo: (1)"Border relations with Canada have never been better."
+12. run e frase sopra
+13. break phase_2
+14. run
+15. disas phase_2
+16. (2)1 2 4 8 16 32
+17. (3)0 207
+18. (4)7 0
+//evitabile 19. x/s 0x40245e e leggiamo: "flyers", poi x/s 0x4024b0 e leggiamo: "maduiersnfotvbyl..."= (5)ionefg
+//evitabile 20. (6)4 3 2 1 6 5
+
+
+
+

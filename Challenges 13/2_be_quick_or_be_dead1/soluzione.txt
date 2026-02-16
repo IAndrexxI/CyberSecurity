@@ -1,0 +1,15 @@
+1. $ cd "/c/Users/Andre/Documents/2_be_quick_or_be_dead1"
+2. $ chmod -R +rx ./
+3. $ wsl
+4. ./be-quick-or-be-dead-1
+risultato: flag: picoCTF{why_bother_doing_unnecessary_computation_27f28e71}
+------
+$ gdb be-quick-or-be-dead-1
+disas main
+Analizzare set_timer: Controllare l’istruzione alarm(1)
+Analizzare calculate_key
+Analizzare print_flag
+Possibili patch secondo il prof:
+	-Aumentare i secondi dell’allarme (es. da 1 a 60)
+	-Cambiare il jnz nel loop in jz per saltare la computazione (ma attenzione, il flag 	può essere criptato se il key non è calcolato correttamente)
+Salva e ./be-quick-or-be-dead-1

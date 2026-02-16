@@ -1,0 +1,5 @@
+1. cd "/c/Users/Andre/Documents/1_hello_world"
+2. file hello_world
+3. chmod -R +rx ./
+4. strings hello_world
+5. risultato: Flage{reverse_hello_world}

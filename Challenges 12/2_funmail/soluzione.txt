@@ -1,0 +1,9 @@
+1. $ cd "/c/Users/Andre/Documents/2_funmail"
+2. $ chmod -R +rx ./
+3. $ strings funmail
+username: john galt
+password: this-password-is-a-secret-to-everyone!
+4. $ wsl
+5. ./funmail
+6. Inserisci username e password e premi 1 per leggere l'email
+risultato: TUCTF{d0n7_h4rdc0d3_p455w0rd5}

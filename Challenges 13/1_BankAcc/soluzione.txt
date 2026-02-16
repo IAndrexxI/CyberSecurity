@@ -1,0 +1,10 @@
+1. $ cd "/c/Users/Andre/Documents/1_BankAcc"
+2. $ chmod -R +rx ./
+3. $ wsl
+4. $ gdb BankAcc
+5. break main
+6. run 
+7. disas main e quit
+8. hxd->cerca->trova->valori esadecimali->39 45 D4 75 5D 48->clicca sul 75 e scrivi 74->salva
+9. torna su wsl, ./BankAcc inserisci un PIN qualsiasi
+risultato: Flag{P00r_45_DuCk}
