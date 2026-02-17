@@ -1,0 +1,8 @@
+avvia docker desktop
+$ cd "/C/Users/andre/Documents/2026_01_29/retro_arcade"
+$ chmod -R +rx ./
+$ docker build --network=host -t cpp/retroarcade .
+docker run -d -p "127.0.0.1:8080:5000" --name "retroarcade" "cpp/retroarcade"
+docker start retroarcade
+http://127.0.0.1:8080 fai f12 vai su application->cookies e cambia 10 in 100
+spritz{C00K13_M4N1PUL4T10N_M4ST3R_R3TR0_4RC4D3}

