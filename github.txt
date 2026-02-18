@@ -1,5 +1,9 @@
 https://github.com/AndreaSgreva/cyber_helps
 
 https://github.com/rpfontana/Cybersecurity 
+for flask: python3 -m venv venv
+source venv/Scripts/activate
+pip install flask
 
 https://mega.nz/fm/qU9imSqB
+
